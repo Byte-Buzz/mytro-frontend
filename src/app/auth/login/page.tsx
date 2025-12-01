@@ -2,8 +2,9 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
 
-import AuthBackgroundShape from '@/assets/svg/auth-background-shape'
-import LoginForm from '@/components/shadcn-studio/blocks/login-page-01/login-form'
+import Logo from '@/assets/logo'
+import AuthBackgroundShape from '@/assets/auth-background-shape'
+import LoginForm from '@/components/auth/login-form'
 
 const Login = () => {
   return (
@@ -14,7 +15,7 @@ const Login = () => {
 
       <Card className='z-1 w-full border-none shadow-md sm:max-w-lg'>
         <CardHeader className='gap-6'>
-
+          <Logo className='gap-3' />
 
           <div>
             <CardTitle className='mb-1.5 text-2xl'>Sign in to Shadcn Studio</CardTitle>
