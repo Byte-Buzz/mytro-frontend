@@ -8,31 +8,28 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-8">
             <a href="/" className="flex items-center gap-2">
-              <div className="text-2xl">Inspire</div>
+              <div className="text-2xl">Mytro</div>
             </a>
             
             <nav className="hidden md:flex gap-6">
               <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
-                Features
+                Функции
               </a>
               <a href="#showcase" className="text-muted-foreground hover:text-foreground transition-colors">
-                Explore
-              </a>
-              <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
-                Pricing
+                Исследовать
               </a>
               <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-                About
+                О нас
               </a>
             </nav>
           </div>
 
           <div className="flex items-center gap-4">
             <Button variant="ghost" className="hidden sm:flex rounded-xl">
-              Log In
+              Войти
             </Button>
             <Button className="rounded-xl">
-              Sign Up Free
+              Зарегистрироваться
             </Button>
             <Button variant="ghost" size="icon" className="md:hidden">
               <Menu className="h-5 w-5" />

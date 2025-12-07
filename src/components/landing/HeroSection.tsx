@@ -7,45 +7,19 @@ export function HeroSection() {
       <div className="container mx-auto px-4 py-24 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
-              <Sparkles className="w-4 h-4" />
-              <span className="text-sm">Your creative companion</span>
-            </div>
-            
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl">
-                Discover Ideas. Save Inspiration.
+                MYTRO
               </h1>
               <p className="text-xl text-muted-foreground max-w-lg">
-                Collect and organize everything that inspires you. From design to recipes, 
-                all your ideas in one beautiful space.
+                Откройте для себя идеи.
               </p>
             </div>
 
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="rounded-xl">
-                Start Creating
+                Опробовать
               </Button>
-              <Button size="lg" variant="ghost" className="rounded-xl">
-                Explore Boards
-              </Button>
-            </div>
-
-            <div className="flex items-center gap-8 pt-4">
-              <div>
-                <div className="text-2xl">10M+</div>
-                <div className="text-sm text-muted-foreground">Active users</div>
-              </div>
-              <div className="w-px h-12 bg-border" />
-              <div>
-                <div className="text-2xl">500M+</div>
-                <div className="text-sm text-muted-foreground">Pins saved</div>
-              </div>
-              <div className="w-px h-12 bg-border" />
-              <div>
-                <div className="text-2xl">4.8★</div>
-                <div className="text-sm text-muted-foreground">User rating</div>
-              </div>
             </div>
           </div>
 
