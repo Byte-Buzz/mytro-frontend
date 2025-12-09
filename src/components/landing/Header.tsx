@@ -12,13 +12,13 @@ export function Header() {
             </a>
             
             <nav className="hidden md:flex gap-6">
-              <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="function" className="text-muted-foreground hover:text-foreground transition-colors">
                 Функции
               </a>
               <a href="#showcase" className="text-muted-foreground hover:text-foreground transition-colors">
                 Исследовать
               </a>
-              <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="about-us" className="text-muted-foreground hover:text-foreground transition-colors">
                 О нас
               </a>
             </nav>

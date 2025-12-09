@@ -1,3 +1,10 @@
+"use client";
+
+import React, { useState } from "react";
+
+const ERROR_IMG_SRC =
+  'data:image/svg+xml;base64,...';
+
 import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 
 const team = [
