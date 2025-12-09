@@ -15,8 +15,8 @@ export function Header() {
               <a href="function" className="text-muted-foreground hover:text-foreground transition-colors">
                 Функции
               </a>
-              <a href="#showcase" className="text-muted-foreground hover:text-foreground transition-colors">
-                Исследовать
+              <a href="" className="text-muted-foreground hover:text-foreground transition-colors">
+                Что-то
               </a>
               <a href="about-us" className="text-muted-foreground hover:text-foreground transition-colors">
                 О нас
