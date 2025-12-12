@@ -10,38 +10,23 @@ export function CTASection() {
           <CardContent className="p-12 text-center space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl lg:text-5xl">
-                Start your creative journey today
+                Начните своё творческое путешествие уже сегодня
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Join millions of creators who organize their inspiration with us. 
-                It's free to start, no credit card required.
+                Присоединяйтесь к миллионам создателей, которые организуют своё вдохновение вместе с нами. 
+                Начните бесплатно — банковская карта не требуется.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="rounded-xl group">
-                Get Started Free
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button size="lg" variant="outline" className="rounded-xl">
-                Watch Demo
-              </Button>
-            </div>
-
-            <div className="flex items-center justify-center gap-8 pt-4 text-sm text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
-                No credit card required
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
-                Free forever plan
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
-                Cancel anytime
-              </div>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="rounded-xl group h-12 w-48">
+              Начать бесплатно
+              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            <a href="/function" className="inline-flex items-center justify-center h-12 w-48 bg-white text-slate-900 rounded-xl hover:bg-slate-100 transition-colors duration-200">
+              Узнать больше
+            </a>
+          </div>
           </CardContent>
         </Card>
       </div>

@@ -13,43 +13,43 @@ import { FeatureCard } from "./FeatureCard";
 const features = [
   {
     icon: Bookmark,
-    title: "Save Pins",
-    description: "Save any idea or image to your private or public collections with just one click."
+    title: "Сохраняйте пины",
+    description: "Сохраняйте любые идеи и изображения в личные или публичные коллекции одним кликом."
   },
   {
     icon: FolderOpen,
-    title: "Create Boards",
-    description: "Organize pins into themed boards for easy navigation and visual organization."
+    title: "Создавайте доски",
+    description: "Организуйте пины по тематическим доскам — для удобной навигации и визуального порядка."
   },
   {
     icon: Sparkles,
-    title: "Visual Discovery Feed",
-    description: "Get personalized recommendations based on your interests and browsing behavior."
+    title: "Умная лента открытий",
+    description: "Получайте персональные рекомендации на основе ваших интересов и поведения."
   },
   {
     icon: Search,
-    title: "Smart Search",
-    description: "Search by text, keywords, or use image recognition to find exactly what you need."
+    title: "Умный поиск",
+    description: "Ищите по тексту, ключевым словам или используйте распознавание изображений."
   },
   {
     icon: Upload,
-    title: "Pin Uploading",
-    description: "Upload your own images or ideas directly into the feed and share with the community."
+    title: "Загрузка пинов",
+    description: "Загружайте свои изображения и идеи прямо в ленту и делитесь с сообществом."
   },
   {
     icon: Users,
-    title: "Sharing & Collaboration",
-    description: "Share boards or collaborate with others to build collections together."
+    title: "Обмен и совместная работа",
+    description: "Делитесь досками и создавайте коллекции вместе с друзьями или командой."
   },
   {
     icon: Grid3x3,
-    title: "Masonry Grid Layout",
-    description: "Beautiful, responsive Pinterest-like grid that adapts to any screen size."
+    title: "Адаптивная сетка Masonry",
+    description: "Красивая responsive-сетка в стиле Pinterest, идеально подстраивается под любой экран."
   },
   {
     icon: Smartphone,
-    title: "Cross-Device Sync",
-    description: "Access your content seamlessly across mobile, tablet, and desktop devices."
+    title: "Синхронизация между устройствами",
+    description: "Ваш контент всегда под рукой — на телефоне, планшете и компьютере."
   }
 ];
 
@@ -58,9 +58,9 @@ export function FeatureGrid() {
     <div className="w-full bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="mb-4">Everything You Need</h2>
+          <h2 className="mb-4">Всё, что вам нужно</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Powerful features designed to help you discover, save, and organize visual inspiration effortlessly.
+            Мощный набор функций, созданный для того, чтобы вы легко находили, сохраняли и упорядочивали визуальное вдохновение.
           </p>
         </div>
         

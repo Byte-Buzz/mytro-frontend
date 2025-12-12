@@ -2,39 +2,40 @@ import { Check } from "lucide-react";
 
 const benefits = [
   {
-    title: "Lightning Fast",
-    description: "Optimized performance ensures smooth scrolling and instant loading, even with thousands of pins."
+    title: "Молниеносная скорость",
+    description: "Оптимизированная производительность обеспечивает плавную прокрутку и мгновенную загрузку, даже с тысячами пинов."
   },
   {
-    title: "Simple & Intuitive",
-    description: "Clean interface designed for ease of use. No learning curve, just pure inspiration."
+    title: "Просто и интуитивно",
+    description: "Чистый и понятный интерфейс. Никакого обучения — только чистое вдохновение."
   },
   {
-    title: "Cross-Platform",
-    description: "Seamless experience across all your devices with automatic cloud sync."
+    title: "Кроссплатформенность",
+    description: "Бесшовный опыт на всех ваших устройствах с автоматической облачной синхронизацией."
   },
   {
-    title: "Privacy Focused",
-    description: "Your data is yours. Control what you share and keep your boards private when you want."
+    title: "Фокус на приватности",
+    description: "Ваши данные — только ваши. Контролируйте, что делиться, и держите свои доски приватными, когда хотите."
   },
   {
-    title: "Community Driven",
-    description: "Join millions of creators and discover endless inspiration from a vibrant community."
+    title: "Сообщество создаёт",
+    description: "Присоединяйтесь к миллионам создателей и открывайте бесконечное вдохновение от активного сообщества."
   },
   {
-    title: "Always Improving",
-    description: "Regular updates with new features based on user feedback and the latest trends."
+    title: "Постоянно развивается",
+    description: "Регулярные обновления с новыми функциями, основанными на обратной связи и современных трендах."
   }
 ];
+
 
 export function BenefitsSection() {
   return (
     <div className="w-full bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="mb-4">Why Choose Us</h2>
+          <h2 className="mb-4">Почему выбирают нас</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Built with your needs in mind, our platform delivers the best experience for visual discovery and organization.
+            Создано с учётом ваших потребностей — наша платформа обеспечивает лучший опыт визуального поиска и организации.
           </p>
         </div>
         

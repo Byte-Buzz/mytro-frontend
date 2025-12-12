@@ -3,18 +3,18 @@ import { Heart, Users, Lightbulb } from "lucide-react";
 const values = [
   {
     icon: Heart,
-    title: "Inspire Creativity",
-    description: "We believe everyone has the potential to create something beautiful. Our platform provides the tools and inspiration to bring ideas to life.",
+    title: "Вдохновляем на творчество",
+    description: "Мы верим, что каждый имеет потенциал создать что-то прекрасное. Наша платформа предоставляет инструменты и вдохновение для воплощения идей в жизнь.",
   },
   {
     icon: Users,
-    title: "Build Community",
-    description: "Connect with like-minded creators, share your work, and discover new perspectives from a diverse global community.",
+    title: "Создаём сообщество",
+    description: "Общайтесь с единомышленниками, делитесь своими работами и открывайте новые перспективы в нашем разнообразном глобальном сообществе.",
   },
   {
     icon: Lightbulb,
-    title: "Empower Discovery",
-    description: "Make it easy to find and organize ideas that matter. From DIY projects to professional work, we help you discover what&apos;s possible.",
+    title: "Открываем возможности",
+    description: "Мы помогаем легко находить и организовывать важные идеи. От DIY1проектов до профессиональных работ — мы показываем, что возможно.",
   },
 ];
 
@@ -23,10 +23,10 @@ export function MissionValues() {
     <section className="py-16 px-4 bg-white">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="mb-4">Our Mission & Values</h2>
+          <h2 className="mb-4">Наша миссия и ценности</h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            We&apos;re driven by a simple belief: everyone deserves a space to explore, 
-            create, and share their passions.
+            Нами движет простая вера: каждый заслуживает пространства для исследования, 
+            творчества и обмена своими увлечениями.
           </p>
         </div>
         

@@ -3,28 +3,28 @@ import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 const footerLinks = {
   product: [
-    { label: "Features", href: "#" },
-    { label: "Pricing", href: "#" },
-    { label: "Security", href: "#" },
-    { label: "Roadmap", href: "#" }
+    { label: "Возможности", href: "#" },
+    { label: "Цены", href: "#" },
+    { label: "Безопасность", href: "#" },
+    { label: "Дорожная карта", href: "#" }
   ],
   company: [
-    { label: "About", href: "#" },
-    { label: "Blog", href: "#" },
-    { label: "Careers", href: "#" },
-    { label: "Press", href: "#" }
+    { label: "О компании", href: "#" },
+    { label: "Блог", href: "#" },
+    { label: "Карьера", href: "#" },
+    { label: "Пресса", href: "#" }
   ],
   resources: [
-    { label: "Help Center", href: "#" },
-    { label: "Community", href: "#" },
-    { label: "Guides", href: "#" },
-    { label: "API Docs", href: "#" }
+    { label: "Центр помощи", href: "#" },
+    { label: "Сообщество", href: "#" },
+    { label: "Гайды", href: "#" },
+    { label: "API документация", href: "#" }
   ],
   legal: [
-    { label: "Privacy", href: "#" },
-    { label: "Terms", href: "#" },
+    { label: "Конфиденциальность", href: "#" },
+    { label: "Условия", href: "#" },
     { label: "Cookies", href: "#" },
-    { label: "Licenses", href: "#" }
+    { label: "Лицензии", href: "#" }
   ]
 };
 
@@ -45,7 +45,7 @@ export function Footer() {
               <div className="text-2xl">Inspire</div>
             </div>
             <p className="text-muted-foreground mb-6 max-w-xs">
-              Organize your creative inspiration and collaborate with your team, all in one beautiful platform.
+              Организуйте своё творческое вдохновение и сотрудничайте с командой — всё в одной красивой платформе.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => {
@@ -65,7 +65,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4">Product</h4>
+            <h4 className="mb-4">Продукт</h4>
             <ul className="space-y-3">
               {footerLinks.product.map((link) => (
                 <li key={link.label}>
@@ -78,7 +78,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4">Company</h4>
+            <h4 className="mb-4">Компания</h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
@@ -91,7 +91,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4">Resources</h4>
+            <h4 className="mb-4">Ресурсы</h4>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.label}>
@@ -104,7 +104,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4">Legal</h4>
+            <h4 className="mb-4">Правовая информация</h4>
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.label}>
@@ -120,8 +120,8 @@ export function Footer() {
         <Separator className="mb-8" />
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>© 2025 Inspire. All rights reserved.</p>
-          <p>Made with passion for creative minds</p>
+          <p>© 2025 Inspire. Все права защищены.</p>
+          <p>Создано с любовью для творческих людей</p>
         </div>
       </div>
     </footer>

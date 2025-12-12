@@ -4,22 +4,22 @@ const stats = [
   {
     icon: Users,
     value: "1M+",
-    label: "Active Users",
+    label: "Активных пользователей",
   },
   {
     icon: Bookmark,
     value: "10M+",
-    label: "Saved Ideas",
+    label: "Сохранённых идей",
   },
   {
     icon: Globe,
     value: "50+",
-    label: "Countries",
+    label: "Стран",
   },
   {
     icon: Heart,
     value: "100M+",
-    label: "Inspirations Shared",
+    label: "Опубликованных вдохновений",
   },
 ];
 

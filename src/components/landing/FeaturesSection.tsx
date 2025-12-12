@@ -4,23 +4,23 @@ import { Grid3x3, Sparkles, Users, Lock } from "lucide-react";
 const features = [
   {
     icon: Grid3x3,
-    title: "Visual Organization",
-    description: "Create beautiful boards to organize your ideas by theme, project, or mood. Everything stays visually organized and easy to find."
+    title: "Визуальная организация",
+    description: "Создавайте красивые доски, чтобы организовывать идеи по темам, проектам или настроению. Всё остаётся структурированным и легко доступным."
   },
   {
     icon: Sparkles,
-    title: "AI-Powered Discovery",
-    description: "Get personalized recommendations based on your interests. Our smart algorithm helps you discover content you'll love."
+    title: "Открытие с помощью ИИ",
+    description: "Получайте персонализированные рекомендации на основе ваших интересов. Наш умный алгоритм помогает находить контент, который вам понравится."
   },
   {
     icon: Users,
-    title: "Collaborate & Share",
-    description: "Invite team members to collaborate on shared boards. Work together seamlessly on creative projects."
+    title: "Совместная работа и обмен",
+    description: "Приглашайте участников команды для совместной работы над досками. Работайте вместе над творческими проектами."
   },
   {
     icon: Lock,
-    title: "Private & Secure",
-    description: "Keep your personal boards private or share them with the world. You're in complete control of your content."
+    title: "Приватность и безопасность",
+    description: "Держите личные доски приватными или делитесь ими с миром. Вы полностью контролируете свой контент."
   }
 ];
 
@@ -30,10 +30,10 @@ export function FeaturesSection() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl lg:text-5xl mb-4">
-            Everything you need to stay inspired
+            Всё, что нужно для вдохновения
           </h2>
           <p className="text-xl text-muted-foreground">
-            Powerful features designed to help you collect, organize, and share your creative inspiration.
+            Мощные инструменты, созданные для того, чтобы вы могли собирать, организовывать и делиться своим творческим вдохновением.
           </p>
         </div>
 
