@@ -2,7 +2,7 @@ import { DeepDiveFeature } from "./DeepDiveFeature";
 
 export function DeepDiveSections() {
   return (
-    <div className="w-full">
+    <div className="w-full bg-gray-50 dark:bg-gray-950">
       <DeepDiveFeature
         title="Как доски помогают оставаться организованным"
         description="Создавайте собственные доски, чтобы систематизировать пины по темам, проектам или настроению. Планируете ли вы ремонт дома, собираете идеи рецептов или создаёте мудборд для следующего творческого проекта — доски позволяют удобно категоризировать всё и иметь быстрый доступ к вдохновению в любой момент."

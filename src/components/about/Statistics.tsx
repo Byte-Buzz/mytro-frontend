@@ -1,6 +1,13 @@
+import type { ComponentType } from "react";
 import { Users, Bookmark, Globe, Heart } from "lucide-react";
 
-const stats = [
+type StatItem = {
+  icon: ComponentType<{ className?: string }>;
+  value: string;
+  label: string;
+};
+
+const STATS: StatItem[] = [
   {
     icon: Users,
     value: "1M+",
@@ -25,19 +32,30 @@ const stats = [
 
 export function Statistics() {
   return (
-    <section className="py-16 px-4 bg-slate-50">
+    <section className="bg-background py-16 px-4">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-          {stats.map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-slate-900 text-white mb-4">
-                <stat.icon className="w-7 h-7" />
+
+        <ul className="grid grid-cols-2 gap-8 lg:grid-cols-4">
+          {STATS.map(({ icon: Icon, value, label }) => (
+            <li
+              key={label}
+              className="flex flex-col items-center text-center"
+            >
+              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-primary text-primary-foreground">
+                <Icon className="h-7 w-7" />
               </div>
-              <div className="mb-1">{stat.value}</div>
-              <p className="text-slate-600">{stat.label}</p>
-            </div>
+
+              <strong className="mb-1 text-2xl font-semibold">
+                {value}
+              </strong>
+
+              <span className="text-muted-foreground">
+                {label}
+              </span>
+            </li>
           ))}
-        </div>
+        </ul>
+
       </div>
     </section>
   );

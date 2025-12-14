@@ -27,14 +27,13 @@ const benefits = [
   }
 ];
 
-
 export function BenefitsSection() {
   return (
-    <div className="w-full bg-white py-20">
+    <div className="w-full bg-white dark:bg-gray-950 py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="mb-4">Почему выбирают нас</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <h2 className="mb-4 text-gray-900 dark:text-white">Почему выбирают нас</h2>
+          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Создано с учётом ваших потребностей — наша платформа обеспечивает лучший опыт визуального поиска и организации.
           </p>
         </div>
@@ -42,12 +41,12 @@ export function BenefitsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
             <div key={index} className="flex gap-4">
-              <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 bg-gray-900 rounded-xl">
+              <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 bg-gray-900 dark:bg-gray-700 rounded-xl">
                 <Check className="w-5 h-5 text-white" />
               </div>
               <div>
-                <h3 className="mb-2">{benefit.title}</h3>
-                <p className="text-gray-600">{benefit.description}</p>
+                <h3 className="mb-2 text-gray-900 dark:text-white">{benefit.title}</h3>
+                <p className="text-gray-600 dark:text-gray-400">{benefit.description}</p>
               </div>
             </div>
           ))}
