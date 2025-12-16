@@ -6,14 +6,22 @@ interface FeatureCardProps {
   description: string;
 }
 
-export function FeatureCard({ icon: Icon, title, description }: FeatureCardProps) {
+export function FeatureCard({
+  icon: Icon,
+  title,
+  description,
+}: FeatureCardProps) {
   return (
-    <div className="group relative bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:-translate-y-1">
-      <div className="flex items-center justify-center w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-xl mb-6 group-hover:bg-gray-900 dark:group-hover:bg-gray-600 transition-colors duration-300">
-        <Icon className="w-6 h-6 text-gray-700 dark:text-gray-200 group-hover:text-white dark:group-hover:text-white transition-colors duration-300" />
+    <div className="group relative rounded-2xl border border-gray-200 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg dark:border-neutral-800 dark:bg-neutral-900">
+      <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100 transition-colors duration-300 group-hover:bg-gray-900 dark:bg-neutral-800 dark:group-hover:bg-neutral-100">
+        <Icon className="h-6 w-6 text-gray-700 transition-colors duration-300 group-hover:text-white dark:text-neutral-200 dark:group-hover:text-black" />
       </div>
-      <h3 className="mb-3 text-gray-900 dark:text-white">{title}</h3>
-      <p className="text-gray-600 dark:text-gray-400">{description}</p>
+      <h3 className="mb-3 text-gray-900 dark:text-neutral-100">
+        {title}
+      </h3>
+      <p className="text-gray-600 dark:text-neutral-400">
+        {description}
+      </p>
     </div>
   );
 }
