@@ -1,7 +1,6 @@
 "use client";
 
-import { ResponsiveMasonry } from "react-responsive-masonry";
-import { Heart, Bookmark } from "lucide-react";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { useState } from "react";
 
 interface Pin {
@@ -21,7 +20,7 @@ export function MasonryGrid({ pins, columns = 4 }: MasonryGridProps) {
 
   return (
     <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: columns }}>
-      <div style={{ display: "grid", gridTemplateColumns: `repeat(${columns}, 1fr)`, gap: "1rem" }}>
+      <Masonry>
         {pins.map((pin) => (
           <div
             key={pin.id}
@@ -37,16 +36,7 @@ export function MasonryGrid({ pins, columns = 4 }: MasonryGridProps) {
               />
               
               {hoveredPin === pin.id && (
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent flex flex-col justify-between p-4">
-                  <div className="flex justify-end gap-2">
-                    <button className="w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-colors">
-                      <Heart className="w-5 h-5 text-foreground" />
-                    </button>
-                    <button className="w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-colors">
-                      <Bookmark className="w-5 h-5 text-foreground" />
-                    </button>
-                  </div>
-                  
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent flex flex-col justify-end p-4">
                   <div className="text-white">
                     <div className="text-sm opacity-80">{pin.category}</div>
                     <div>{pin.title}</div>
@@ -56,7 +46,7 @@ export function MasonryGrid({ pins, columns = 4 }: MasonryGridProps) {
             </div>
           </div>
         ))}
-      </div>
+      </Masonry>
     </ResponsiveMasonry>
   );
 }

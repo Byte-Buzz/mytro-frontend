@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Grid3x3, Sparkles, Users, Lock } from "lucide-react";
+import { Grid3x3, Users, Lock, BotMessageSquare } from "lucide-react";
 
 const features = [
   {
@@ -8,14 +8,9 @@ const features = [
     description: "Создавайте красивые доски, чтобы организовывать идеи по темам, проектам или настроению. Всё остаётся структурированным и легко доступным."
   },
   {
-    icon: Sparkles,
+    icon: BotMessageSquare,
     title: "Открытие с помощью ИИ",
     description: "Получайте персонализированные рекомендации на основе ваших интересов. Наш умный алгоритм помогает находить контент, который вам понравится."
-  },
-  {
-    icon: Users,
-    title: "Совместная работа и обмен",
-    description: "Приглашайте участников команды для совместной работы над досками. Работайте вместе над творческими проектами."
   },
   {
     icon: Lock,
@@ -37,7 +32,7 @@ export function FeaturesSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (

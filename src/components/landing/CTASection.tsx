@@ -20,7 +20,7 @@ export function CTASection() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="rounded-xl group h-12 w-48">
-              Начать бесплатно
+              Начать
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
             <a href="/function" className="inline-flex items-center justify-center h-12 w-48 bg-white text-slate-900 rounded-xl hover:bg-slate-100 transition-colors duration-200">
