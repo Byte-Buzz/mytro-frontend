@@ -4,16 +4,15 @@ import {
   GithubIcon,
   TwitchIcon,
   TwitterIcon,
+  Chromium,
+  Send,
 } from "lucide-react";
 import Link from "next/link";
 
 const footerLinks = [
-  { title: "Обзор", href: "#" },
+  { title: "Обзор", href: "about-us" },
   { title: "Возможности", href: "function" },
   { title: "Цены", href: "#" },
-  { title: "Карьера", href: "#" },
-  { title: "Помощь", href: "#" },
-  { title: "Конфиденциальность", href: "#" },
 ];
 
 const Footer = () => {
@@ -60,23 +59,23 @@ const Footer = () => {
           <span className="text-muted-foreground">
             &copy; {new Date().getFullYear()} {" "}
             <Link href="/" target="_blank">
-              Shadcn UI Blocks
+              Mytro
             </Link>
             . Все права защищены.
           </span>
 
           <div className="flex items-center gap-5 text-muted-foreground">
+            <Link href="#" target="_blank" aria-label="Github">
+              <GithubIcon className="h-5 w-5" />
+            </Link>
             <Link href="#" target="_blank" aria-label="Twitter">
               <TwitterIcon className="h-5 w-5" />
             </Link>
-            <Link href="#" target="_blank" aria-label="Dribbble">
-              <DribbbleIcon className="h-5 w-5" />
+            <Link href="#" target="_blank" aria-label="Google">
+              <Chromium className="h-5 w-5" />
             </Link>
-            <Link href="#" target="_blank" aria-label="Twitch">
-              <TwitchIcon className="h-5 w-5" />
-            </Link>
-            <Link href="#" target="_blank" aria-label="Github">
-              <GithubIcon className="h-5 w-5" />
+            <Link href="#" target="_blank" aria-label="Telegram">
+              <Send className="h-5 w-5" />
             </Link>
           </div>
         </div>
