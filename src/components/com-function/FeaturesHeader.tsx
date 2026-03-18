@@ -1,4 +1,4 @@
-import { Sparkles, Grid3x3, Image } from "lucide-react";
+import { Slack, Grid3x3, Image } from "lucide-react";
 
 export function FeaturesHeader() {
   return (
@@ -16,7 +16,7 @@ export function FeaturesHeader() {
 
           <div className="mt-8 flex items-center justify-center gap-4">
             <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-gray-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
-              <Sparkles className="h-7 w-7 text-gray-700 dark:text-neutral-200" />
+              <Slack className="h-7 w-7 text-gray-700 dark:text-neutral-200" />
             </div>
             <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-gray-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
               <Grid3x3 className="h-7 w-7 text-gray-700 dark:text-neutral-200" />

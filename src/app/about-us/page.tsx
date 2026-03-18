@@ -16,8 +16,6 @@ export default function App() {
           <HeroSection />
           <MissionValues />
           <TeamSection />
-          <Timeline />
-          <Statistics />
           <CallToAction />
         </main>
       </div>

@@ -16,7 +16,6 @@ export default function App() {
           <HeroSection />
           <FeaturesSection />
           <ShowcaseSection />
-          <TestimonialsSection />
           <CTASection />
         </main>
         <Footer />

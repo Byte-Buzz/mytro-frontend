@@ -12,32 +12,18 @@ type TeamMember = {
 
 const TEAM: TeamMember[] = [
   {
-    name: "Сара Чен",
-    role: "Сооснователь и CEO",
-    bio: "Бывший продуктовый дизайнер с увлечением визуальным сторителлингом и созданием сообществ.",
+    name: "Ефимов Дмитрий",
+    role: "Backend",
+    bio: "Инженер серверной разработки, отвечающий за архитектуру и логику работы платформы. Занимается проектированием API, обработкой пользовательских данных и обеспечением стабильной работы сервиса. Увлекается созданием масштабируемых систем и оптимизацией производительности веб-приложений.",
     image:
-      "https://images.unsplash.com/photo-1623594675959-02360202d4d6?auto=format&fit=crop&w=1080&q=80",
+      "https://ya.ru/images/search?from=tabbar&img_url=https%3A%2F%2Fi.sstatic.net%2FrYsym.png&lr=51&pos=53&rpt=simage&text=%D1%84%D0%BE%D1%82%D0%BE%20%D0%B8%D0%B7%20%D0%B3%D0%B8%D1%82%D1%85%D0%B0%D0%B1%D0%B0",
   },
   {
-    name: "Маркус Джонсон",
-    role: "Сооснователь и CTO",
-    bio: "Инженер и художник, верящий, что технологии должны усиливать человеческое творчество.",
+    name: "Леликов Иван",
+    role: "Frontend",
+    bio: "Frontend-разработчик, создающий удобный и современный пользовательский интерфейс. Отвечает за визуальную часть платформы, интерактивность и адаптивность интерфейса. Стремится сделать взаимодействие пользователя с сервисом максимально простым, быстрым и интуитивно понятным.",
     image:
-      "https://images.unsplash.com/photo-1672685667592-0392f458f46f?auto=format&fit=crop&w=1080&q=80",
-  },
-  {
-    name: "Алекс Ривера",
-    role: "Руководитель отдела дизайна",
-    bio: "Эксперт по дизайн-системам, сосредоточенный на создании красивых и доступных интерфейсов.",
-    image:
-      "https://images.unsplash.com/photo-1724941407869-f8fb46a3cc38?auto=format&fit=crop&w=1080&q=80",
-  },
-  {
-    name: "Джордан Ли",
-    role: "Руководитель сообщества",
-    bio: "Активист сообщества, посвятивший себя созданию значимых связей между творцами.",
-    image:
-      "https://images.unsplash.com/photo-1581065178047-8ee15951ede6?auto=format&fit=crop&w=1080&q=80",
+      "https://ya.ru/images/search?from=tabbar&img_url=https%3A%2F%2Fi.sstatic.net%2FrYsym.png&lr=51&pos=53&rpt=simage&text=%D1%84%D0%BE%D1%82%D0%BE%20%D0%B8%D0%B7%20%D0%B3%D0%B8%D1%82%D1%85%D0%B0%D0%B1%D0%B0",
   },
 ];
 
@@ -49,12 +35,12 @@ export function TeamSection() {
         <header className="mb-12 text-center">
           <h2 className="mb-4">Наша команда</h2>
           <p className="mx-auto max-w-2xl text-muted-foreground">
-            Разнообразная группа творцов, строителей и мечтателей, работающих вместе,
+            Разнообразная группа специалистов, работающих вместе,
             чтобы сделать вдохновение доступным для каждого.
           </p>
         </header>
 
-        <ul className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <ul className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
           {TEAM.map(({ name, role, bio, image }) => (
             <li key={name} className="text-center">
               <div className="mb-4 flex justify-center">
