@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/label";
 
 export default function NewPasswordPage() {
   const searchParams = useSearchParams();
-  const token = searchParams.get("token"); // токен из ссылки
+  const token = searchParams.get("token");
 
   const [password, setPassword] = useState("");
   const [confirm, setConfirm] = useState("");
@@ -33,12 +33,6 @@ export default function NewPasswordPage() {
     setError("");
 
     try {
-      // 👇 Отправка на бэкенд
-      // await fetch("/api/new-password", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body: JSON.stringify({ token, password }),
-      // });
 
       console.log("Updated password:", password);
       setUpdated(true);

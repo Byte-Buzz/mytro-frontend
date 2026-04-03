@@ -16,7 +16,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { FigmaIcon, GithubIcon, InstagramIcon, TwitchIcon, TwitterIcon } from "lucide-react";
+import {SiGithub} from "react-icons/si";
+import { FaVk, FaYandex, FaGoogle, FaTelegramPlane } from "react-icons/fa";
 
 const formSchema = z.object({
   email: z.string().email(),
@@ -60,36 +61,37 @@ const Login = () => {
               size="icon"
               className="rounded-full h-10 w-10"
             >
-              <GithubIcon className="h-[18px]! w-[18px]!" />
+              <SiGithub size={18} />
             </Button>
             <Button
               variant="outline"
               size="icon"
               className="rounded-full h-10 w-10"
             >
-              <InstagramIcon className="h-[18px]! w-[18px]!" />
+              <FaYandex size={18} />
             </Button>
             <Button
               variant="outline"
               size="icon"
               className="rounded-full h-10 w-10"
             >
-              <TwitterIcon className="h-[18px]! w-[18px]!" />
+              <FaVk size={18} />
             </Button>
             <Button
               variant="outline"
               size="icon"
               className="rounded-full h-10 w-10"
             >
-              <FigmaIcon className="h-[18px]! w-[18px]!" />
+              <FaGoogle size={18} />
             </Button>
             <Button
               variant="outline"
               size="icon"
               className="rounded-full h-10 w-10"
             >
-              <TwitchIcon className="h-[18px]! w-[18px]!" />
+              <FaTelegramPlane size={18} />
             </Button>
+
           </div>
 
           <div className="my-7 w-full flex items-center justify-center overflow-hidden">

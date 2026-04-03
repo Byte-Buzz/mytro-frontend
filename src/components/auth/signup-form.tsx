@@ -8,7 +8,9 @@ import {
   FieldSeparator,
 } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
-import { FigmaIcon, GithubIcon, InstagramIcon, TwitchIcon, TwitterIcon } from "lucide-react"
+import {SiGithub} from "react-icons/si";
+import { FaVk, FaYandex, FaGoogle, FaTelegramPlane } from "react-icons/fa";
+import { GithubIcon } from "lucide-react";
 
 export function SignupForm({
   className,
@@ -57,35 +59,35 @@ export function SignupForm({
               size="icon"
               className="rounded-full h-10 w-10"
             >
-              <GithubIcon className="h-[18px]! w-[18px]!" />
+              <SiGithub size={18} />
             </Button>
             <Button
               variant="outline"
               size="icon"
               className="rounded-full h-10 w-10"
             >
-              <InstagramIcon className="h-[18px]! w-[18px]!" />
+              <FaYandex size={18} />
             </Button>
             <Button
               variant="outline"
               size="icon"
               className="rounded-full h-10 w-10"
             >
-              <TwitterIcon className="h-[18px]! w-[18px]!" />
+              <FaVk size={18} />
             </Button>
             <Button
               variant="outline"
               size="icon"
               className="rounded-full h-10 w-10"
             >
-              <FigmaIcon className="h-[18px]! w-[18px]!" />
+              <FaGoogle size={18} />
             </Button>
             <Button
               variant="outline"
               size="icon"
               className="rounded-full h-10 w-10"
             >
-              <TwitchIcon className="h-[18px]! w-[18px]!" />
+              <FaTelegramPlane size={18} />
             </Button>
           </div>
           <FieldDescription className="px-6 text-center">

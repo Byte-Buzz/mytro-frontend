@@ -14,7 +14,6 @@ const LoginForm = () => {
 
   return (
     <form className='space-y-4' onSubmit={e => e.preventDefault()}>
-      {/* Email */}
       <div className='space-y-1'>
         <Label htmlFor='userEmail' className='leading-5'>
           Email address*
@@ -22,7 +21,6 @@ const LoginForm = () => {
         <Input type='email' id='userEmail' placeholder='Enter your email address' />
       </div>
 
-      {/* Password */}
       <div className='w-full space-y-1'>
         <Label htmlFor='password' className='leading-5'>
           Password*
@@ -41,7 +39,6 @@ const LoginForm = () => {
         </div>
       </div>
 
-      {/* Remember Me and Forgot Password */}
       <div className='flex items-center justify-between gap-y-2'>
         <div className='flex items-center gap-3'>
           <Checkbox id='rememberMe' className='size-6' />

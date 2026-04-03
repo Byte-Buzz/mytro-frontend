@@ -18,9 +18,6 @@ export default function ResetPasswordPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // 👇 Здесь отправляй запрос на API
-    // await fetch("/api/auth/reset-password", { method: "POST", body: JSON.stringify({ email }) });
-
     console.log("Reset link sent to:", email);
   };
 
